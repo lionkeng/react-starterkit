@@ -1,5 +1,5 @@
-# starterkit-react-mui-webpack
-This is a starterkit project using react, material-ui, and webpack for bundling.
+# react-starterkit
+A simple starterkit with material-ui, react-router, and webpack.
 
 # How to use
 * clone this repo
