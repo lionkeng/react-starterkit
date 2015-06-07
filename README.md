@@ -5,14 +5,15 @@ This is a starterkit project using react, material-ui, and webpack for bundling.
 * clone this repo
 * go to the root directory of your project, and install dependencies:
 ```
-cd <project folder>/
+cd <project folder>
 npm install
 ```
 
-* For development, we use (webpack-dev-server)[http://webpack.github.io/docs/webpack-dev-server.html] for hotswapping
+* For development, we use [webpack-dev-server](http://webpack.github.io/docs/webpack-dev-server.html) for hotswapping. 
 ```
 npm run dev
 ```
+In your browser, type `http://localhost:5050`
 
 * For deployment, we webpack everything and put them in the dist folder.
 ```
