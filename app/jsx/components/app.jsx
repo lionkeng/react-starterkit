@@ -2,6 +2,8 @@
 /** In this file, we create a React component which incorporates components provided by material-ui */
 
 var React = require('react');
+var Router = require('react-router');
+var RouteHandler = Router.RouteHandler;
 
 var mui = require('material-ui/lib/index');
 var { AppBar, AppCanvas, Menu, FlatButton, RaisedButton, Styles } = mui;
@@ -27,6 +29,10 @@ var App = React.createClass({
     });
   },
 
+  handleTouchTap: function() {
+    alert('1-2-3-4-5');
+  },
+
   render: function() {
     var self = this;
     var title = "Hello World!";
@@ -44,17 +50,10 @@ var App = React.createClass({
           title={title}
           zDepth={0}
         />
-        <div style={containerStyle}>
-            <RaisedButton label="Primary" primary={true} />
-            <RaisedButton label="Secondary" secondary={true} />
-        </div>
+        <RouteHandler />
       </div>
     );
   },
-
-  handleTouchTap: function() {
-    alert('1-2-3-4-5');
-  }
   
 });
 
