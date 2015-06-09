@@ -33,6 +33,7 @@
     "material-ui": "^0.8.0",
     "node-libs-browser": "^0.5.2",
     "react": "^0.13.3",
+    "react-router": "^0.13.3",
     "react-tap-event-plugin": "^0.1.7",
     "style-loader": "^0.12.3",
     "url-loader": "^0.5.6",
