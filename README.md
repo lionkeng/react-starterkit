@@ -1,5 +1,4 @@
 # react-starterkit
-NOT PRODUCTION READY
 A simple starterkit with material-ui, react-router, and webpack.
 
 # How to use
