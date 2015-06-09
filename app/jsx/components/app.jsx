@@ -5,6 +5,8 @@ var React = require('react');
 var Router = require('react-router');
 var RouteHandler = Router.RouteHandler;
 
+var AppLeftNav = require('./app-leftnav.jsx');
+
 var mui = require('material-ui/lib/index');
 var { AppBar, AppCanvas, Menu, FlatButton, RaisedButton, Styles } = mui;
 
@@ -17,20 +19,20 @@ var App = React.createClass({
     muiTheme: React.PropTypes.object
   },
 
-  getChildContext: function() {
-    return {
-      muiTheme: ThemeManager.getCurrentTheme()
-    };
-  },
-
   componentWillMount: function() {
     ThemeManager.setPalette({
       accent1Color: Colors.deepOrange500
     });
   },
 
+  getChildContext: function() {
+    return {
+      muiTheme: ThemeManager.getCurrentTheme()
+    };
+  },
+
   handleTouchTap: function() {
-    alert('1-2-3-4-5');
+    this.refs.leftNav.toggle();
   },
 
   render: function() {
@@ -50,6 +52,9 @@ var App = React.createClass({
           title={title}
           zDepth={0}
         />
+
+        <AppLeftNav ref="leftNav" />
+        
         <RouteHandler />
       </div>
     );

@@ -11,6 +11,8 @@ var App = require('./components/app.jsx');
 var Home = require('./components/pages/home.jsx');
 var NotFound = require('./components/pages/notfound.jsx');
 
+var PageOne = require('./components/pages/page-one.jsx');
+var PageTwo = require('./components/pages/page-two.jsx');
 
 var Community = React.createClass({
   contextTypes: {
@@ -40,6 +42,8 @@ var AppRoutes = (
         <DefaultRoute handler={Home} />
         <Route name="main" path="index.html" handler={Home} />
         <Route name="home" path="home.html" handler={Home} />
+        <Route name="page-one" path="community/page-one.html" handler={PageOne} />
+        <Route name="page-two" path="community/page-two.html" handler={PageTwo} />
         <Route name="community" path="community/:name" handler={Community} />
     </Route>
     <NotFoundRoute handler={NotFound} />
